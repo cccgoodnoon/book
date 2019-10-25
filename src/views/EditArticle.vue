@@ -1,3 +1,4 @@
+helloworld
 <template>
     <el-form @submit.native.prevent="saveArticle" ref="form" :model="article" label-width="80px">
         <el-form-item label="文章标题">
@@ -25,7 +26,7 @@
       saveArticle() {
         this.$http.put(`article/${this.$route.params.id}`, this.article).then(res => {
           this.$message({
-            message: "文章修改成功！",
+            message: "文章修改成功�?,
             type: "success"
           });
           this.$router.push("/articles/index");
