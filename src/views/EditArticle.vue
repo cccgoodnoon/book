@@ -24,7 +24,7 @@
       saveArticle() {
         this.$http.put(`article/${this.$route.params.id}`, this.article).then(res => {
           this.$message({
-            message: "文章修改成功�?,
+            message: "文章修改成功",
             type: "success"
           });
           this.$router.push("/articles/index");
